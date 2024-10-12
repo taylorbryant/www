@@ -19,7 +19,7 @@ export default function Home() {
       <p className="mb-6">
         Hi, I&apos;m Taylor, a software engineer based in Memphis, TN. I lead
         the web team at{" "}
-        <ExternalLink href="https://www.treatmyocd.com/">NOCD</ExternalLink>.
+        <ExternalLink href="https://www.treatmyocd.com/">NOCD</ExternalLink>, where we're helping people with NOCD by raising awareness and providing effective treatment.
       </p>
 
       <p className="mb-6">
