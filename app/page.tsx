@@ -23,15 +23,23 @@ export default function Home() {
       </p>
 
       <p className="mb-6">
-        Some fun facts about me: I first started making websites in elementary school, because I wanted to create a Dragon Ball Z fansite. In college, I ran an independent record label
-        called{" "}
+        Some fun facts about me: I first started making websites in elementary
+        school, because I wanted to create a Dragon Ball Z fansite. In college,
+        I ran an independent record label called{" "}
         <ExternalLink href="https://www.discogs.com/label/390082-Carucage-Records">
-          Carucage
+          Carucage Records
         </ExternalLink>
         . I played guitar in{" "}
         <ExternalLink href="https://tesstn.bandcamp.com/">Tess</ExternalLink>,{" "}
         <ExternalLink href="https://neevtn.bandcamp.com/">Neev</ExternalLink>,{" "}
-        and{" "}
+        <ExternalLink href="https://sequoiaisrad.bandcamp.com/album/frank">
+          Sequoia
+        </ExternalLink>
+        ,{" "}
+        <ExternalLink href="https://greyscaletn.bandcamp.com/album/greyscale-coma-regalia-split-7">
+          Greyscale
+        </ExternalLink>
+        , and{" "}
         <ExternalLink href="https://siddharthatn.bandcamp.com/">
           Siddhartha
         </ExternalLink>
