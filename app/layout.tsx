@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import Image from "next/image";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Taylor Bryant",
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en-US">
       <body
-        className={`${inter.className} antialiased flex flex-col max-w-xl mx-auto w-full min-h-screen`}
+        className={`font-sans antialiased flex flex-col max-w-xl mx-auto w-full min-h-screen`}
       >
         <header className="pt-12 px-6 w-full mb-9">
           <Image
