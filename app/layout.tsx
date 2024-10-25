@@ -17,7 +17,7 @@ export default function RootLayout({
       <body
         className={`px-6 py-6 sm:py-12 font-sans antialiased flex flex-col max-w-xl mx-auto w-full min-h-screen`}
       >
-        <header className="w-full mb-4 sm:mb-6">
+        <header className="w-full mb-6">
           <Image
             className="rounded-lg sm:rounded-full w-[60px] h-[60px] sm:w-[80px] sm:h-[80px]"
             src="/me.svg"
