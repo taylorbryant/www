@@ -17,7 +17,7 @@ export default function RootLayout({
       <body
         className={`font-sans antialiased flex flex-col max-w-xl mx-auto w-full min-h-screen`}
       >
-        <header className="pt-12 px-6 w-full mb-9">
+        <header className="pt-12 px-6 w-full mb-6 phone:mb-9">
           <Image
             className="rounded-full w-[60px] h-[60px] phone:w-[90px] phone:h-[90px]"
             src="/me.svg"
