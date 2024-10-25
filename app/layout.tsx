@@ -17,18 +17,18 @@ export default function RootLayout({
       <body
         className={`font-sans antialiased flex flex-col max-w-xl mx-auto w-full min-h-screen`}
       >
-        <header className="pt-12 px-6 w-full mb-6 phone:mb-9">
+        <header className="pt-6 sm:pt-12 px-6 w-full mb-6">
           <Image
-            className="rounded-lg phone:rounded-full w-[60px] h-[60px] phone:w-[90px] phone:h-[90px]"
+            className="rounded-lg sm:rounded-full w-[60px] h-[60px] sm:w-[80px] sm:h-[80px]"
             src="/me.svg"
-            width={90}
-            height={90}
+            width={80}
+            height={80}
             alt=""
             aria-hidden="true"
           />
         </header>
 
-        <main className="flex-1 px-6">{children}</main>
+        <main className="flex-1 px-6 pb-6">{children}</main>
       </body>
     </html>
   );

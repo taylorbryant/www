@@ -1,5 +1,5 @@
 import { DetailedHTMLProps, AnchorHTMLAttributes } from "react";
-
+import Image from "next/image";
 const ExternalLink = ({
   href,
   children,
@@ -19,7 +19,9 @@ export default function Home() {
       <p className="mb-6 text-pretty">
         Hi, I&apos;m Taylor, a software engineer based in Memphis, TN. I lead
         the web team at{" "}
-        <ExternalLink href="https://www.treatmyocd.com/">NOCD</ExternalLink>, where we&apos;re helping people with OCD by raising awareness and providing effective treatment.
+        <ExternalLink href="https://www.treatmyocd.com/">NOCD</ExternalLink>,
+        where we&apos;re helping people with OCD by raising awareness and
+        providing effective treatment.
       </p>
 
       <p className="mb-6 text-pretty">
