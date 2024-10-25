@@ -16,7 +16,7 @@ const ExternalLink = ({
 export default function Home() {
   return (
     <>
-      <p className="mb-6 text-pretty">
+      <p className="mb-4 text-pretty">
         Hi, I&apos;m Taylor, a software engineer based in Memphis, TN. I lead
         the web team at{" "}
         <ExternalLink href="https://www.treatmyocd.com/">NOCD</ExternalLink>,
@@ -24,7 +24,7 @@ export default function Home() {
         providing effective treatment.
       </p>
 
-      <p className="mb-6 text-pretty">
+      <p className="mb-4 text-pretty">
         Some fun facts about me: I first started making websites in elementary
         school, because I wanted to create a Dragon Ball Z fansite. In college,
         I ran an independent record label called{" "}
