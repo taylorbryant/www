@@ -1,5 +1,4 @@
-import { DetailedHTMLProps, AnchorHTMLAttributes } from "react";
-import Image from "next/image";
+import { AnchorHTMLAttributes, DetailedHTMLProps } from "react";
 const ExternalLink = ({
   href,
   children,
