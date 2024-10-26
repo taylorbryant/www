@@ -7,7 +7,7 @@ const ExternalLink = ({
   AnchorHTMLAttributes<HTMLAnchorElement>,
   HTMLAnchorElement
 >) => (
-  <a className="text-[#0000EE]" href={href} {...rest}>
+  <a className="underline" href={href} {...rest}>
     {children}
   </a>
 );
