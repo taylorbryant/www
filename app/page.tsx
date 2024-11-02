@@ -60,7 +60,9 @@ export default function Home() {
         <ExternalLink href="https://github.com/taylorbryant">
           GitHub
         </ExternalLink>
-        , <ExternalLink href="https://x.com/tayl_rbryant">X</ExternalLink>, and{" "}
+        , <ExternalLink href="https://x.com/tayl_rbryant">X</ExternalLink>, <ExternalLink href="https://bsky.app/profile/taylor.page">
+          Bluesky
+        </ExternalLink> and{" "}
         <ExternalLink href="https://linkedin.com/in/taylorjamesbryant">
           LinkedIn
         </ExternalLink>
