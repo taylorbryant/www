@@ -62,7 +62,7 @@ export default function Home() {
         </ExternalLink>
         , <ExternalLink href="https://x.com/tayl_rbryant">X</ExternalLink>, <ExternalLink href="https://bsky.app/profile/taylor.page">
           Bluesky
-        </ExternalLink> and{" "}
+        </ExternalLink>, and{" "}
         <ExternalLink href="https://linkedin.com/in/taylorjamesbryant">
           LinkedIn
         </ExternalLink>
