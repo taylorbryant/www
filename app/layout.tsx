@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en-US">
       <body
-        className={`px-6 py-6 sm:py-12 font-sans antialiased flex flex-col max-w-xl mx-auto w-full min-h-screen`}
+        className={`px-6 py-6 sm:py-12 font-sans antialiased flex flex-col max-w-[70ch] mx-auto w-full min-h-screen`}
       >
         <header className="w-full mb-6">
           <Image
