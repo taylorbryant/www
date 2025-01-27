@@ -27,7 +27,7 @@ export default function Home() {
         Some fun facts about me: I first started making websites in elementary
         school, because I wanted to create a Dragon Ball Z fansite. In college,
         I ran an independent record label called{" "}
-        <ExternalLink href="https://www.discogs.com/label/390082-Carucage-Records">
+        <ExternalLink href="https://carucage.com">
           Carucage Records
         </ExternalLink>
         . I played guitar in{" "}
