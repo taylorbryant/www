@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import "./globals.css";
+import Logo from "./logo";
 
 export const metadata: Metadata = {
   title: "Taylor Bryant",
@@ -18,14 +18,7 @@ export default function RootLayout({
         className={`px-6 py-6 sm:py-12 font-sans antialiased flex flex-col max-w-[70ch] mx-auto w-full min-h-screen`}
       >
         <header className="w-full mb-6">
-          <Image
-            className="rounded-lg sm:rounded-full w-[60px] h-[60px] sm:w-[80px] sm:h-[80px]"
-            src="/me.svg"
-            width={80}
-            height={80}
-            alt=""
-            aria-hidden="true"
-          />
+          <Logo />
         </header>
 
         <main className="flex-1">{children}</main>
