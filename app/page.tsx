@@ -7,7 +7,7 @@ const ExternalLink = ({
   AnchorHTMLAttributes<HTMLAnchorElement>,
   HTMLAnchorElement
 >) => (
-  <a className="underline" href={href} {...rest}>
+  <a className="underline underline-offset-2" href={href} {...rest}>
     {children}
   </a>
 );
@@ -15,9 +15,9 @@ const ExternalLink = ({
 export default function Home() {
   return (
     <>
+      <h1 className="text-xl mb-4 font-semibold">Hi, I&apos;m Taylor.</h1>
       <p className="mb-4 text-pretty">
-        Hi, I&apos;m Taylor, a software engineer based in Memphis, TN. I lead
-        the web team at{" "}
+        I'm a software engineer based in Memphis, TN. I lead the web team at{" "}
         <ExternalLink href="https://www.treatmyocd.com/">NOCD</ExternalLink>,
         where we&apos;re helping people with OCD by raising awareness and
         providing effective treatment.
