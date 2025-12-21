@@ -24,7 +24,7 @@ export default function Home() {
       </p>
 
             <p className="mb-4 text-pretty">
-        In my spare time, I write music and work on side projects. I'm currently building <ExternalLink href="https://contractkit.dev">Contract Kit</ExternalLink>.
+        In my spare time, I write music and work on side projects. I&apos;m currently building <ExternalLink href="https://contractkit.dev">Contract Kit</ExternalLink>.
       </p>
 
       <p className="mb-4 text-pretty">
