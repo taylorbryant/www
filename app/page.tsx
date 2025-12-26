@@ -24,7 +24,7 @@ export default function Home() {
       </p>
 
             <p className="mb-4 text-pretty">
-        In my spare time, I write music and work on side projects. Right now, I'm building <ExternalLink href="https://contractkit.dev">Contract Kit</ExternalLink>, a contract-first TypeScript framework for building type-safe APIs.
+        In my spare time, I write music and work on side projects. Right now, I&apos;m building <ExternalLink href="https://contractkit.dev">Contract Kit</ExternalLink>, a contract-first TypeScript framework for building type-safe APIs.
       </p>
 
       <p className="mb-4 text-pretty">
