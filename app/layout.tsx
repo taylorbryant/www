@@ -13,15 +13,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-US">
-      <body
-        className={`px-6 py-6 sm:py-12 font-sans antialiased flex flex-col max-w-[70ch] mx-auto w-full min-h-screen`}
-      >
-        <header className="w-full mb-6">
-          <Logo />
-        </header>
-
-        <main className="flex-1">{children}</main>
+    <html lang="en-US" data-theme="light">
+      <body>
+        <article>{children}</article>
       </body>
     </html>
   );

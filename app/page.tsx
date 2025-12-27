@@ -1,4 +1,5 @@
 import { AnchorHTMLAttributes, DetailedHTMLProps } from "react";
+import Logo from "./logo";
 const ExternalLink = ({
   href,
   children,
@@ -7,7 +8,7 @@ const ExternalLink = ({
   AnchorHTMLAttributes<HTMLAnchorElement>,
   HTMLAnchorElement
 >) => (
-  <a className="underline text-[#0000FF] underline-offset-2" href={href} {...rest}>
+  <a href={href} {...rest}>
     {children}
   </a>
 );
@@ -15,65 +16,94 @@ const ExternalLink = ({
 export default function Home() {
   return (
     <>
-      <h1 className="text-xl mb-4 font-semibold">Hi, I&apos;m Taylor Bryant.</h1>
-      <p className="mb-4 text-pretty">
+      <Logo />
+      <h1>Hi, I&apos;m Taylor Bryant.</h1>
+
+      <p>
         I&apos;m a software engineer based in Memphis, TN. I lead the web team
         at <ExternalLink href="https://www.treatmyocd.com/">NOCD</ExternalLink>,
         where we&apos;re helping people with OCD by raising awareness and
         providing effective treatment.
       </p>
 
-            <p className="mb-4 text-pretty">
-        In my spare time, I write music and work on side projects. Right now, I&apos;m building <ExternalLink href="https://contractkit.dev">Contract Kit</ExternalLink>, a contract-first TypeScript framework for building type-safe APIs.
-      </p>
+      <h2>Tinkering on</h2>
 
-      <p className="mb-4 text-pretty">
-        Some fun facts about me: I first started making websites in elementary
-        school, because I wanted to create a Dragon Ball Z fansite. In college,
-        I ran an independent record label called{" "}
-        <ExternalLink href="https://carucage.com">
-          Carucage Records
-        </ExternalLink>
-        . I played guitar in{" "}
-        <ExternalLink href="https://tesstn.bandcamp.com/">Tess</ExternalLink>,{" "}
-        <ExternalLink href="https://neevtn.bandcamp.com/">Neev</ExternalLink>,{" "}
-        <ExternalLink href="https://sequoiaisrad.bandcamp.com/album/frank">
-          Sequoia
-        </ExternalLink>
-        ,{" "}
-        <ExternalLink href="https://greyscaletn.bandcamp.com/album/greyscale-coma-regalia-split-7">
-          Greyscale
-        </ExternalLink>
-        , and{" "}
-        <ExternalLink href="https://siddharthatn.bandcamp.com/">
-          Siddhartha
-        </ExternalLink>
-        . I played drums in{" "}
-        <ExternalLink href="https://closetome.bandcamp.com/">
-          Close to Me
-        </ExternalLink>{" "}
-        and{" "}
-        <ExternalLink href="https://stepsistertn.bandcamp.com/">
-          Stepsister
-        </ExternalLink>
-        .
-      </p>
+      <ul>
+        <li>
+          <ExternalLink href="https://contractkit.dev">
+            Contract Kit
+          </ExternalLink>
+          - A contract-first TypeScript framework for building type-safe APIs
+        </li>
+        <li>
+          <ExternalLink href="https://www.npmjs.com/package/beignet.css">
+            beignet.css
+          </ExternalLink>{" "}
+          - A tiny, classless stylesheet inspired by Safari Reader Mode
+        </li>
+      </ul>
 
-      <p className="text-pretty">
-        You can also find me on{" "}
-        <ExternalLink href="https://github.com/taylorbryant">
-          GitHub
-        </ExternalLink>
-        , <ExternalLink href="https://x.com/tayl_rbryant">X</ExternalLink>,{" "}
-        <ExternalLink href="https://bsky.app/profile/taylor.page">
-          Bluesky
-        </ExternalLink>
-        , and{" "}
-        <ExternalLink href="https://linkedin.com/in/taylorjamesbryant">
-          LinkedIn
-        </ExternalLink>
-        .
-      </p>
+      <h2>Fun facts</h2>
+      <ul>
+        <li>
+          Some fun facts about me: I first started making websites in elementary
+          school, because I wanted to create a Dragon Ball Z fansite.
+        </li>
+        <li>
+          In college, I ran an independent record label called{" "}
+          <ExternalLink href="https://carucage.com">
+            Carucage Records
+          </ExternalLink>
+          .
+        </li>{" "}
+        <li>
+          I played guitar in{" "}
+          <ExternalLink href="https://tesstn.bandcamp.com/">Tess</ExternalLink>,{" "}
+          <ExternalLink href="https://neevtn.bandcamp.com/">Neev</ExternalLink>,{" "}
+          <ExternalLink href="https://sequoiaisrad.bandcamp.com/album/frank">
+            Sequoia
+          </ExternalLink>
+          ,{" "}
+          <ExternalLink href="https://greyscaletn.bandcamp.com/album/greyscale-coma-regalia-split-7">
+            Greyscale
+          </ExternalLink>
+          , and{" "}
+          <ExternalLink href="https://siddharthatn.bandcamp.com/">
+            Siddhartha
+          </ExternalLink>
+          .
+        </li>
+        <li>
+          {" "}
+          I played drums in{" "}
+          <ExternalLink href="https://closetome.bandcamp.com/">
+            Close to Me
+          </ExternalLink>{" "}
+          and{" "}
+          <ExternalLink href="https://stepsistertn.bandcamp.com/">
+            Stepsister
+          </ExternalLink>
+          .
+        </li>
+      </ul>
+
+      <footer>
+        <p>
+          You can also find me on{" "}
+          <ExternalLink href="https://github.com/taylorbryant">
+            GitHub
+          </ExternalLink>
+          , <ExternalLink href="https://x.com/tayl_rbryant">X</ExternalLink>,{" "}
+          <ExternalLink href="https://bsky.app/profile/taylor.page">
+            Bluesky
+          </ExternalLink>
+          , and{" "}
+          <ExternalLink href="https://linkedin.com/in/taylorjamesbryant">
+            LinkedIn
+          </ExternalLink>
+          .
+        </p>
+      </footer>
     </>
   );
 }

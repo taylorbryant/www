@@ -1,11 +1,13 @@
 const Logo = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="90"
-    height="90"
+    width="120"
+    height="120"
     fill="none"
     viewBox="0 0 90 90"
-    className="rounded-lg sm:rounded-full w-[60px] h-[60px] sm:w-[80px] sm:h-[80px]"
+    style={{
+      borderRadius: "999px",
+    }}
   >
     <g clipPath="url(#a)">
       <path fill="#F3F3F3" d="M90 0H0v90h90z"></path>
