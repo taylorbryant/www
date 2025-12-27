@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Logo from "./logo";
 
 export const metadata: Metadata = {
   title: "Taylor Bryant",

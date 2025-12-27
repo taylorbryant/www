@@ -46,8 +46,8 @@ export default function Home() {
       <h2>Fun facts</h2>
       <ul>
         <li>
-          Some fun facts about me: I first started making websites in elementary
-          school, because I wanted to create a Dragon Ball Z fansite.
+          I first started making websites in elementary school, because I wanted
+          to create a Dragon Ball Z fansite.
         </li>
         <li>
           In college, I ran an independent record label called{" "}
