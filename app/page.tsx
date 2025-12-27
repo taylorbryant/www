@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Logo />
-      <h1>Hi, I&apos;m Taylor Bryant.</h1>
+      <h1>Hi, I&apos;m Taylor.</h1>
 
       <p>
         I&apos;m a software engineer based in Memphis, TN. I lead the web team
