@@ -33,7 +33,7 @@ export default function Home() {
           <ExternalLink href="https://contractkit.dev">
             Contract Kit
           </ExternalLink>
-          - A contract-first TypeScript framework for building type-safe APIs
+           - A contract-first TypeScript framework for building type-safe APIs
         </li>
         <li>
           <ExternalLink href="https://www.npmjs.com/package/beignet.css">
