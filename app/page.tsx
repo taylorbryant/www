@@ -8,7 +8,7 @@ const ExternalLink = ({
   AnchorHTMLAttributes<HTMLAnchorElement>,
   HTMLAnchorElement
 >) => (
-  <a href={href} {...rest}>
+  <a className="font-medium text-html-blue" href={href} {...rest}>
     {children}
   </a>
 );
@@ -16,24 +16,68 @@ const ExternalLink = ({
 export default function Home() {
   return (
     <>
-      <Logo />
-      <h1>Hi, I&apos;m Taylor.</h1>
+      <div className="mb-10">
+        <Logo />
+      </div>
+      <h1 className="text-4xl font-semibold text-balance sm:text-5xl text-gray-900">
+        Hi, I&apos;m Taylor.
+      </h1>
 
-      <p>
-        I&apos;m a software engineer based in Memphis, TN. I lead the web team
-        at <ExternalLink href="https://www.treatmyocd.com/">NOCD</ExternalLink>,
-        where we&apos;re helping people with OCD by raising awareness and
-        providing effective treatment.
+      <p className="mt-6 text-lg/8 text-gray-800">
+        I&apos;m a software engineer with 9+ years of experience based in
+        Memphis, TN. I lead the web team at{" "}
+        <ExternalLink href="https://www.noto.ai/">Noto</ExternalLink>, where
+        we're working to end the mental health crisis with{" "}
+        <ExternalLink href="https://www.treatmyocd.com/">NOCD</ExternalLink> and{" "}
+        <ExternalLink href="https://hellorebound.com">Rebound</ExternalLink>.
       </p>
 
-      <h2>Tinkering on</h2>
+      <h2 className="mt-12 text-xl font-semibold text-gray-900">Experience</h2>
 
-      <ul>
+      <ul className="mt-4 space-y-4 text-gray-800">
+        <li className="flex flex-col gap-x-6 gap-y-1 sm:flex-row sm:items-baseline">
+          <span className="font-semibold text-gray-900">Noto</span>
+          <span
+            aria-hidden
+            className="hidden h-px flex-1 bg-gray-200 sm:block"
+          />
+          <span className="text-gray-500">
+            Senior Director of Engineering
+          </span>
+          <span className="tabular-nums text-gray-500">2020 - now</span>
+        </li>
+        <li className="flex flex-col gap-x-6 gap-y-1 sm:flex-row sm:items-baseline">
+          <span className="font-semibold text-gray-900">
+            Livestock Nutrition Center
+          </span>
+          <span
+            aria-hidden
+            className="hidden h-px flex-1 bg-gray-200 sm:block"
+          />
+          <span className="text-gray-500">Senior Software Engineer</span>
+          <span className="tabular-nums text-gray-500">2018 - 2020</span>
+        </li>
+        <li className="flex flex-col gap-x-6 gap-y-1 sm:flex-row sm:items-baseline">
+          <span className="font-semibold text-gray-900">HigherVisibility</span>
+          <span
+            aria-hidden
+            className="hidden h-px flex-1 bg-gray-200 sm:block"
+          />
+          <span className="text-gray-500">Front-End Developer</span>
+          <span className="tabular-nums text-gray-500">2017 - 2018</span>
+        </li>
+      </ul>
+
+      <h2 className="mt-12 text-xl font-semibold text-gray-900">
+        Tinkering on
+      </h2>
+
+      <ul className="mt-4 space-y-4 text-gray-800">
         <li>
           <ExternalLink href="https://contractkit.dev">
             Contract Kit
-          </ExternalLink>
-          {" "}- A contract-first TypeScript framework for building type-safe APIs
+          </ExternalLink>{" "}
+          - A contract-first TypeScript framework for building type-safe APIs
         </li>
         <li>
           <ExternalLink href="https://www.npmjs.com/package/beignet.css">
@@ -43,8 +87,8 @@ export default function Home() {
         </li>
       </ul>
 
-      <h2>Fun facts</h2>
-      <ul>
+      <h2 className="mt-12 text-xl font-semibold text-gray-900">Fun facts</h2>
+      <ul className="mt-4 list-disc space-y-3 pl-5 text-gray-800 marker:text-gray-700">
         <li>
           I first started making websites in elementary school, because I wanted
           to create a Dragon Ball Z fansite.
@@ -87,7 +131,7 @@ export default function Home() {
         </li>
       </ul>
 
-      <footer>
+      <footer className="mt-12 border-t border-gray-200 pt-6 text-sm/6 text-gray-600">
         <p>
           You can also find me on{" "}
           <ExternalLink href="https://github.com/taylorbryant">

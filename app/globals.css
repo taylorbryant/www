@@ -1,1 +1,6 @@
-@import "beignet.css";
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --color-html-blue: #0000ef;
+}
