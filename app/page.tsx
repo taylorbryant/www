@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Logo />
-      <h1>Hi, I&apos;m Taylor Bryant.</h1>
+      <h1>Hi, I&apos;m Taylor.</h1>
 
       <p>
         I&apos;m a software engineer based in Memphis, TN. I lead the web team
@@ -33,7 +33,7 @@ export default function Home() {
           <ExternalLink href="https://contractkit.dev">
             Contract Kit
           </ExternalLink>
-          - A contract-first TypeScript framework for building type-safe APIs
+          {" "}- A contract-first TypeScript framework for building type-safe APIs
         </li>
         <li>
           <ExternalLink href="https://www.npmjs.com/package/beignet.css">
