@@ -74,16 +74,10 @@ export default function Home() {
 
       <ul className="mt-4 space-y-4 text-gray-800">
         <li>
-          <ExternalLink href="https://contractkit.dev">
-            Contract Kit
+          <ExternalLink href="https://beignetjs.com">
+            Beignet
           </ExternalLink>{" "}
           - A contract-first TypeScript framework for building type-safe APIs
-        </li>
-        <li>
-          <ExternalLink href="https://www.npmjs.com/package/beignet.css">
-            beignet.css
-          </ExternalLink>{" "}
-          - A tiny, classless stylesheet inspired by Safari Reader Mode
         </li>
       </ul>
 
