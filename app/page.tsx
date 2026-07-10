@@ -77,7 +77,13 @@ export default function Home() {
           <ExternalLink href="https://beignetjs.com">
             Beignet
           </ExternalLink>{" "}
-          - A contract-first TypeScript framework for building fullstack apps
+          - A contract-first TypeScript framework for building production-ready web applications
+        </li>
+        <li>
+          <ExternalLink href="https://haunter.app">
+            Haunter
+          </ExternalLink>{" "}
+          - A simple productivity app for organizing notes, tasks, and ideas in one place
         </li>
       </ul>
 
