@@ -85,6 +85,12 @@ export default function Home() {
           </ExternalLink>{" "}
           - A simple productivity app for organizing notes, tasks, and ideas in one place
         </li>
+        <li>
+          <ExternalLink href="https://taylorbryant.github.io/tenchi/">
+            Tenchi
+          </ExternalLink>{" "}
+          - A small, contract-first Python framework
+        </li>
       </ul>
 
       <h2 className="mt-12 text-xl font-semibold text-gray-900">Fun facts</h2>
