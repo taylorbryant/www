@@ -1,5 +1,6 @@
 import { AnchorHTMLAttributes, DetailedHTMLProps } from "react";
 import Logo from "./logo";
+import { BeignetLogo, HaunterLogo, TenchiLogo } from "./project-logos";
 const ExternalLink = ({
   href,
   children,
@@ -68,28 +69,37 @@ export default function Home() {
         </li>
       </ul>
 
-      <h2 className="mt-12 text-xl font-semibold text-gray-900">
-        Tinkering on
-      </h2>
+      <h2 className="mt-12 text-xl font-semibold text-gray-900">Projects</h2>
 
-      <ul className="mt-4 space-y-4 text-gray-800">
-        <li>
-          <ExternalLink href="https://beignetjs.com">
-            Beignet
-          </ExternalLink>{" "}
-          - A contract-first TypeScript framework for building production-ready web applications
+      <ul className="mt-4 space-y-5 text-gray-800">
+        <li className="flex gap-3">
+          <HaunterLogo className="mt-0.5 size-6 shrink-0 text-gray-900" />
+          <div>
+            <ExternalLink href="https://haunter.app">Haunter</ExternalLink>
+            <p className="mt-1 text-gray-600">
+              A simple productivity app for organizing notes, tasks, and ideas
+              in one place
+            </p>
+          </div>
         </li>
-        <li>
-          <ExternalLink href="https://haunter.app">
-            Haunter
-          </ExternalLink>{" "}
-          - A simple productivity app for organizing notes, tasks, and ideas in one place
+        <li className="flex gap-3">
+          <BeignetLogo className="mt-0.5 size-6 shrink-0" />
+          <div>
+            <ExternalLink href="https://beignetjs.com">Beignet</ExternalLink>
+            <p className="mt-1 text-gray-600">
+              A contract-first TypeScript framework for building
+              production-ready web applications
+            </p>
+          </div>
         </li>
-        <li>
-          <ExternalLink href="https://tenchi.io/">
-            Tenchi
-          </ExternalLink>{" "}
-          - A small, contract-first Python framework
+        <li className="flex gap-3">
+          <TenchiLogo className="mt-0.5 size-6 shrink-0" />
+          <div>
+            <ExternalLink href="https://tenchi.io/">Tenchi</ExternalLink>
+            <p className="mt-1 text-gray-600">
+              A small, contract-first Python framework
+            </p>
+          </div>
         </li>
       </ul>
 
