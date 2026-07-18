@@ -47,10 +47,12 @@ export function TenchiLogo({ className }: ProjectLogoProps) {
       viewBox="0 0 64 64"
     >
       <rect fill="#047857" height="64" rx="18" width="64" />
-      <path
-        fill="#ecfdf5"
-        d="M26 8h9v12h12v9H35v12.5c0 3 1.5 4.5 4.7 4.5H47v9h-8.5C30.2 55 26 50.7 26 42V29h-9v-9h9z"
-      />
+      <g fill="#ecfdf5">
+        <rect height="7" rx="2" width="48" x="8" y="12" />
+        <rect height="33" rx="2" width="7" x="17" y="19" />
+        <rect height="33" rx="2" width="7" x="40" y="19" />
+        <rect height="6" rx="2" width="38" x="13" y="28" />
+      </g>
     </svg>
   );
 }
