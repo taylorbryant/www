@@ -1,5 +1,7 @@
 const Logo = () => (
   <svg
+    aria-hidden="true"
+    focusable="false"
     xmlns="http://www.w3.org/2000/svg"
     width="120"
     height="120"

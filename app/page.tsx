@@ -1,6 +1,7 @@
-import { AnchorHTMLAttributes, DetailedHTMLProps } from "react";
+import type { AnchorHTMLAttributes, DetailedHTMLProps } from "react";
 import Logo from "./logo";
 import { BeignetLogo, HaunterLogo, TenchiLogo } from "./project-logos";
+
 const ExternalLink = ({
   href,
   children,
@@ -76,9 +77,7 @@ export default function Home() {
             aria-hidden
             className="hidden h-px flex-1 bg-gray-200 sm:block"
           />
-          <span className="text-gray-500">
-            Senior Director of Engineering
-          </span>
+          <span className="text-gray-500">Senior Director of Engineering</span>
           <span className="tabular-nums text-gray-500">2020 - now</span>
         </li>
         <li className="flex flex-col gap-x-6 gap-y-1 sm:flex-row sm:items-baseline">
