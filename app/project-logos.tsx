@@ -44,7 +44,7 @@ export function TenchiLogo({ className }: ProjectLogoProps) {
       aria-hidden="true"
       className={className}
       focusable="false"
-      viewBox="0 0 64 64"
+      viewBox="-5 -5 74 74"
     >
       <rect fill="#047857" height="64" rx="18" width="64" />
       <g fill="#ecfdf5">
