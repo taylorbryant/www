@@ -33,6 +33,40 @@ export default function Home() {
         <ExternalLink href="https://hellorebound.com">Rebound</ExternalLink>.
       </p>
 
+      <h2 className="mt-12 text-xl font-semibold text-gray-900">Projects</h2>
+
+      <ul className="mt-4 space-y-5 text-gray-800">
+        <li className="flex gap-3">
+          <HaunterLogo className="mt-0.5 size-6 shrink-0 text-gray-900" />
+          <div>
+            <ExternalLink href="https://haunter.app">Haunter</ExternalLink>
+            <p className="mt-1 text-gray-600">
+              A simple productivity app for organizing notes, tasks, and ideas
+              in one place
+            </p>
+          </div>
+        </li>
+        <li className="flex gap-3">
+          <BeignetLogo className="mt-0.5 size-6 shrink-0" />
+          <div>
+            <ExternalLink href="https://beignetjs.com">Beignet</ExternalLink>
+            <p className="mt-1 text-gray-600">
+              A contract-first TypeScript framework for building
+              production-ready web applications
+            </p>
+          </div>
+        </li>
+        <li className="flex gap-3">
+          <TenchiLogo className="mt-0.5 size-6 shrink-0" />
+          <div>
+            <ExternalLink href="https://tenchi.io/">Tenchi</ExternalLink>
+            <p className="mt-1 text-gray-600">
+              A small, contract-first Python framework
+            </p>
+          </div>
+        </li>
+      </ul>
+
       <h2 className="mt-12 text-xl font-semibold text-gray-900">Experience</h2>
 
       <ul className="mt-4 space-y-4 text-gray-800">
@@ -66,40 +100,6 @@ export default function Home() {
           />
           <span className="text-gray-500">Front-End Developer</span>
           <span className="tabular-nums text-gray-500">2017 - 2018</span>
-        </li>
-      </ul>
-
-      <h2 className="mt-12 text-xl font-semibold text-gray-900">Projects</h2>
-
-      <ul className="mt-4 space-y-5 text-gray-800">
-        <li className="flex gap-3">
-          <HaunterLogo className="mt-0.5 size-6 shrink-0 text-gray-900" />
-          <div>
-            <ExternalLink href="https://haunter.app">Haunter</ExternalLink>
-            <p className="mt-1 text-gray-600">
-              A simple productivity app for organizing notes, tasks, and ideas
-              in one place
-            </p>
-          </div>
-        </li>
-        <li className="flex gap-3">
-          <BeignetLogo className="mt-0.5 size-6 shrink-0" />
-          <div>
-            <ExternalLink href="https://beignetjs.com">Beignet</ExternalLink>
-            <p className="mt-1 text-gray-600">
-              A contract-first TypeScript framework for building
-              production-ready web applications
-            </p>
-          </div>
-        </li>
-        <li className="flex gap-3">
-          <TenchiLogo className="mt-0.5 size-6 shrink-0" />
-          <div>
-            <ExternalLink href="https://tenchi.io/">Tenchi</ExternalLink>
-            <p className="mt-1 text-gray-600">
-              A small, contract-first Python framework
-            </p>
-          </div>
         </li>
       </ul>
 
