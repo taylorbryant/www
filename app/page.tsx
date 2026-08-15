@@ -26,7 +26,7 @@ export default function Home() {
       </h1>
 
       <p className="mt-6 text-lg/8 text-gray-800">
-        I&apos;m a software engineer with 9+ years of experience based in
+        I&apos;m a software engineer with over a decade of experience based in
         Memphis, TN. I lead the web team at{" "}
         <ExternalLink href="https://www.noto.ai/">Noto</ExternalLink>, where
         we're working to end the mental health crisis with{" "}
@@ -40,7 +40,13 @@ export default function Home() {
         <li className="flex gap-3">
           <HaunterLogo className="mt-0.5 size-6 shrink-0 text-gray-900" />
           <div>
-            <ExternalLink href="https://haunter.app">Haunter</ExternalLink>
+            <div className="flex items-center gap-2">
+              <ExternalLink href="https://haunter.app">Haunter</ExternalLink>{" "}
+              <span className="border border-gray-200 rounded-full uppercase text-[10px] px-1.5 py-px font-semibold">
+                Private beta
+              </span>
+            </div>
+
             <p className="mt-1 text-gray-600">
               A simple productivity app for organizing notes, tasks, and ideas
               in one place
@@ -50,7 +56,12 @@ export default function Home() {
         <li className="flex gap-3">
           <BeignetLogo className="mt-0.5 size-6 shrink-0" />
           <div>
-            <ExternalLink href="https://beignetjs.com">Beignet</ExternalLink>
+            <div className="flex items-center gap-2">
+              <ExternalLink href="https://beignetjs.com">Beignet</ExternalLink>{" "}
+              <span className="border border-gray-200 rounded-full uppercase text-[10px] px-1.5 py-px font-semibold">
+                Alpha
+              </span>
+            </div>
             <p className="mt-1 text-gray-600">
               A contract-first TypeScript framework for building
               production-ready web applications
@@ -60,7 +71,13 @@ export default function Home() {
         <li className="flex gap-3">
           <TenchiLogo className="mt-0.5 size-6 shrink-0" />
           <div>
-            <ExternalLink href="https://tenchi.io/">Tenchi</ExternalLink>
+            <div className="flex items-center gap-2">
+              <ExternalLink href="https://tenchi.io">Tenchi</ExternalLink>{" "}
+              <span className="border border-gray-200 rounded-full uppercase text-[10px] px-1.5 py-px font-semibold">
+                Alpha
+              </span>
+            </div>
+
             <p className="mt-1 text-gray-600">
               A small, contract-first Python framework
             </p>
@@ -72,7 +89,9 @@ export default function Home() {
 
       <ul className="mt-4 space-y-4 text-gray-800">
         <li className="flex flex-col gap-x-6 gap-y-1 sm:flex-row sm:items-baseline">
-          <span className="font-semibold text-gray-900">Noto</span>
+          <a className="font-semibold text-gray-900" href="https://noto.ai/">
+            Noto
+          </a>
           <span
             aria-hidden
             className="hidden h-px flex-1 bg-gray-200 sm:block"
@@ -81,9 +100,12 @@ export default function Home() {
           <span className="tabular-nums text-gray-500">2020 - now</span>
         </li>
         <li className="flex flex-col gap-x-6 gap-y-1 sm:flex-row sm:items-baseline">
-          <span className="font-semibold text-gray-900">
+          <a
+            className="font-semibold text-gray-900"
+            href="https://lnc-online.com/"
+          >
             Livestock Nutrition Center
-          </span>
+          </a>
           <span
             aria-hidden
             className="hidden h-px flex-1 bg-gray-200 sm:block"
@@ -92,13 +114,27 @@ export default function Home() {
           <span className="tabular-nums text-gray-500">2018 - 2020</span>
         </li>
         <li className="flex flex-col gap-x-6 gap-y-1 sm:flex-row sm:items-baseline">
-          <span className="font-semibold text-gray-900">HigherVisibility</span>
+          <a
+            className="font-semibold text-gray-900"
+            href="https://highervisibility.com/"
+          >
+            HigherVisibility
+          </a>
           <span
             aria-hidden
             className="hidden h-px flex-1 bg-gray-200 sm:block"
           />
           <span className="text-gray-500">Front-End Developer</span>
           <span className="tabular-nums text-gray-500">2017 - 2018</span>
+        </li>
+        <li className="flex flex-col gap-x-6 gap-y-1 sm:flex-row sm:items-baseline">
+          <span className="font-semibold text-gray-900">Self-employed</span>
+          <span
+            aria-hidden
+            className="hidden h-px flex-1 bg-gray-200 sm:block"
+          />
+          <span className="text-gray-500">WordPress Developer</span>
+          <span className="tabular-nums text-gray-500">2011 - 2017</span>
         </li>
       </ul>
 
