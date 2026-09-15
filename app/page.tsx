@@ -38,7 +38,7 @@ export default function Home() {
 
       <ul className="mt-4 space-y-5 text-gray-800">
         <li className="flex gap-3">
-          <HaunterLogo className="mt-0.5 size-6 shrink-0 text-gray-900" />
+          <HaunterLogo className="size-16 shrink-0 object-contain mix-blend-multiply" />
           <div>
             <div className="flex items-center gap-2">
               <ExternalLink href="https://haunter.app">Haunter</ExternalLink>{" "}
@@ -54,7 +54,7 @@ export default function Home() {
           </div>
         </li>
         <li className="flex gap-3">
-          <BeignetLogo className="mt-0.5 size-6 shrink-0" />
+          <BeignetLogo className="size-16 shrink-0 object-contain mix-blend-multiply" />
           <div>
             <div className="flex items-center gap-2">
               <ExternalLink href="https://beignetjs.com">Beignet</ExternalLink>{" "}
@@ -69,7 +69,7 @@ export default function Home() {
           </div>
         </li>
         <li className="flex gap-3">
-          <TenchiLogo className="mt-0.5 size-6 shrink-0" />
+          <TenchiLogo className="size-16 shrink-0 object-contain mix-blend-multiply" />
           <div>
             <div className="flex items-center gap-2">
               <ExternalLink href="https://tenchi.io">Tenchi</ExternalLink>{" "}
