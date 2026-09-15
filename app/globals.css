@@ -1,6 +1,13 @@
 @import "tailwindcss";
 
-@theme {
+@theme inline {
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --color-html-blue: #0000ef;
+}
+
+@utility font-pixel-square {
+  font-family: var(--font-geist-pixel), ui-monospace, monospace;
+  font-variation-settings: "ELSH" 1;
+  font-weight: 400;
+  font-synthesis: none;
 }

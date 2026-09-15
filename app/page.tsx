@@ -5,12 +5,17 @@ import { BeignetLogo, HaunterLogo, TenchiLogo } from "./project-logos";
 const ExternalLink = ({
   href,
   children,
+  className,
   ...rest
 }: DetailedHTMLProps<
   AnchorHTMLAttributes<HTMLAnchorElement>,
   HTMLAnchorElement
 >) => (
-  <a className="font-medium text-html-blue" href={href} {...rest}>
+  <a
+    className={`text-html-blue ${className ?? "font-medium"}`}
+    href={href}
+    {...rest}
+  >
     {children}
   </a>
 );
@@ -21,7 +26,7 @@ export default function Home() {
       <div className="mb-10">
         <Logo />
       </div>
-      <h1 className="text-4xl font-semibold text-balance sm:text-5xl text-gray-900">
+      <h1 className="font-pixel-square text-4xl text-balance sm:text-5xl text-gray-900">
         Hi, I&apos;m Taylor.
       </h1>
 
@@ -34,14 +39,21 @@ export default function Home() {
         <ExternalLink href="https://hellorebound.com">Rebound</ExternalLink>.
       </p>
 
-      <h2 className="mt-12 text-xl font-semibold text-gray-900">Projects</h2>
+      <h2 className="font-pixel-square mt-12 text-xl text-gray-900">
+        Projects
+      </h2>
 
       <ul className="mt-4 space-y-5 text-gray-800">
         <li className="flex gap-3">
           <HaunterLogo className="size-16 shrink-0 object-contain mix-blend-multiply" />
           <div>
             <div className="flex items-center gap-2">
-              <ExternalLink href="https://haunter.app">Haunter</ExternalLink>{" "}
+              <ExternalLink
+                className="font-pixel-square"
+                href="https://haunter.app"
+              >
+                Haunter
+              </ExternalLink>{" "}
               <span className="border border-gray-200 rounded-full uppercase text-[10px] px-1.5 py-px font-semibold">
                 Private beta
               </span>
@@ -57,7 +69,12 @@ export default function Home() {
           <BeignetLogo className="size-16 shrink-0 object-contain mix-blend-multiply" />
           <div>
             <div className="flex items-center gap-2">
-              <ExternalLink href="https://beignetjs.com">Beignet</ExternalLink>{" "}
+              <ExternalLink
+                className="font-pixel-square"
+                href="https://beignetjs.com"
+              >
+                Beignet
+              </ExternalLink>{" "}
               <span className="border border-gray-200 rounded-full uppercase text-[10px] px-1.5 py-px font-semibold">
                 Alpha
               </span>
@@ -72,7 +89,12 @@ export default function Home() {
           <TenchiLogo className="size-16 shrink-0 object-contain mix-blend-multiply" />
           <div>
             <div className="flex items-center gap-2">
-              <ExternalLink href="https://tenchi.io">Tenchi</ExternalLink>{" "}
+              <ExternalLink
+                className="font-pixel-square"
+                href="https://tenchi.io"
+              >
+                Tenchi
+              </ExternalLink>{" "}
               <span className="border border-gray-200 rounded-full uppercase text-[10px] px-1.5 py-px font-semibold">
                 Alpha
               </span>
@@ -85,7 +107,9 @@ export default function Home() {
         </li>
       </ul>
 
-      <h2 className="mt-12 text-xl font-semibold text-gray-900">Experience</h2>
+      <h2 className="font-pixel-square mt-12 text-xl text-gray-900">
+        Experience
+      </h2>
 
       <ul className="mt-4 space-y-4 text-gray-800">
         <li className="flex flex-col gap-x-6 gap-y-1 sm:flex-row sm:items-baseline">
@@ -138,7 +162,9 @@ export default function Home() {
         </li>
       </ul>
 
-      <h2 className="mt-12 text-xl font-semibold text-gray-900">Fun facts</h2>
+      <h2 className="font-pixel-square mt-12 text-xl text-gray-900">
+        Fun facts
+      </h2>
       <ul className="mt-4 list-disc space-y-3 pl-5 text-gray-800 marker:text-gray-700">
         <li>
           I first started making websites in elementary school, because I wanted
