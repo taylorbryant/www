@@ -4,9 +4,9 @@ import avatar from "./images/avatar.jpg";
 const Logo = () => (
   <Image
     alt="Pixel-art illustration of Taylor waving"
-    className="size-40 object-contain mix-blend-multiply"
+    className="h-40 w-auto mix-blend-multiply"
     preload
-    sizes="160px"
+    sizes="110px"
     src={avatar}
   />
 );
