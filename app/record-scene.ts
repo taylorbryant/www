@@ -324,6 +324,8 @@ export async function createRecordScene(
   renderer.domElement.addEventListener("webglcontextlost", loseContext);
   host.append(renderer.domElement);
   resize();
+  // Paint the positioned scene before the caller hides the fallback artwork.
+  renderer.render(scene, camera);
 
   return {
     select(index) {

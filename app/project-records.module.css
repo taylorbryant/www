@@ -33,16 +33,17 @@
 }
 
 .flatRecord {
+  --record-angle: -3deg;
   position: relative;
-  transform: rotate(-3deg);
+  transform: rotate(var(--record-angle));
 }
 
 .flatRecord:nth-child(2) {
-  transform: rotate(2deg);
+  --record-angle: 2deg;
 }
 
 .flatRecord:nth-child(3) {
-  transform: rotate(-2deg);
+  --record-angle: -2deg;
 }
 
 .flatSleeve {
@@ -113,7 +114,7 @@
 
   .flatRecord {
     position: absolute;
-    top: 50%;
+    top: calc(50% + var(--record-size) * 0.045);
     left: calc(
       50% -
       var(--record-size) *
@@ -128,12 +129,13 @@
 
   .flatRecord[data-position="-1"] {
     --record-position: -1;
-    --record-angle: 6deg;
+    --record-angle: -5.15deg;
   }
 
   .flatRecord[data-position="0"] {
     --record-position: 0;
-    --record-angle: -1deg;
+    --record-angle: 1deg;
+    top: calc(50% - var(--record-size) * 0.038);
     left: calc(50% - var(--record-size) * 0.225);
     z-index: 1;
     transform: translate(-50%, -50%) rotate(var(--record-angle));
@@ -141,7 +143,15 @@
 
   .flatRecord[data-position="1"] {
     --record-position: 1;
-    --record-angle: -6deg;
+    --record-angle: 5.15deg;
+  }
+
+  .flatDisc {
+    transform: translateX(22.5%);
+  }
+
+  .flatRecord[data-selected="true"] .flatDisc {
+    transform: translateX(48%);
   }
 
   .selectors {
