@@ -1,4 +1,5 @@
 import type { AnchorHTMLAttributes, DetailedHTMLProps } from "react";
+import ExperienceTapes from "./experience-tapes";
 import Logo from "./logo";
 import ProjectRecords from "./project-records";
 
@@ -36,58 +37,7 @@ export default function Home() {
 
       <ProjectRecords />
 
-      <h2 className="mt-12 text-xl font-semibold text-gray-900">Experience</h2>
-
-      <ul className="mt-4 space-y-4 text-gray-800">
-        <li className="flex flex-col gap-x-6 gap-y-1 sm:flex-row sm:items-baseline">
-          <a className="font-semibold text-gray-900" href="https://noto.ai/">
-            Noto
-          </a>
-          <span
-            aria-hidden
-            className="hidden h-px flex-1 bg-gray-200 sm:block"
-          />
-          <span className="text-gray-500">Senior Director of Engineering</span>
-          <span className="tabular-nums text-gray-500">2020 - now</span>
-        </li>
-        <li className="flex flex-col gap-x-6 gap-y-1 sm:flex-row sm:items-baseline">
-          <a
-            className="font-semibold text-gray-900"
-            href="https://lnc-online.com/"
-          >
-            Livestock Nutrition Center
-          </a>
-          <span
-            aria-hidden
-            className="hidden h-px flex-1 bg-gray-200 sm:block"
-          />
-          <span className="text-gray-500">Senior Software Engineer</span>
-          <span className="tabular-nums text-gray-500">2018 - 2020</span>
-        </li>
-        <li className="flex flex-col gap-x-6 gap-y-1 sm:flex-row sm:items-baseline">
-          <a
-            className="font-semibold text-gray-900"
-            href="https://highervisibility.com/"
-          >
-            HigherVisibility
-          </a>
-          <span
-            aria-hidden
-            className="hidden h-px flex-1 bg-gray-200 sm:block"
-          />
-          <span className="text-gray-500">Front-End Developer</span>
-          <span className="tabular-nums text-gray-500">2017 - 2018</span>
-        </li>
-        <li className="flex flex-col gap-x-6 gap-y-1 sm:flex-row sm:items-baseline">
-          <span className="font-semibold text-gray-900">Self-employed</span>
-          <span
-            aria-hidden
-            className="hidden h-px flex-1 bg-gray-200 sm:block"
-          />
-          <span className="text-gray-500">WordPress Developer</span>
-          <span className="tabular-nums text-gray-500">2011 - 2017</span>
-        </li>
-      </ul>
+      <ExperienceTapes />
 
       <h2 className="mt-12 text-xl font-semibold text-gray-900">Fun facts</h2>
       <ul className="mt-4 list-disc space-y-3 pl-5 text-gray-800 marker:text-gray-700">
