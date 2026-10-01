@@ -1,6 +1,6 @@
 import type { AnchorHTMLAttributes, DetailedHTMLProps } from "react";
 import Logo from "./logo";
-import { BeignetLogo, HaunterLogo, TenchiLogo } from "./project-logos";
+import ProjectRecords from "./project-records";
 
 const ExternalLink = ({
   href,
@@ -18,10 +18,10 @@ const ExternalLink = ({
 export default function Home() {
   return (
     <>
-      <div className="mb-10">
+      <div className="mb-8">
         <Logo />
       </div>
-      <h1 className="text-4xl font-semibold text-balance sm:text-5xl text-gray-900">
+      <h1 className="text-3xl font-semibold text-balance sm:text-4xl text-gray-900">
         Hi, I&apos;m Taylor.
       </h1>
 
@@ -34,56 +34,7 @@ export default function Home() {
         <ExternalLink href="https://hellorebound.com">Rebound</ExternalLink>.
       </p>
 
-      <h2 className="mt-12 text-xl font-semibold text-gray-900">Projects</h2>
-
-      <ul className="mt-4 space-y-5 text-gray-800">
-        <li className="flex gap-3">
-          <HaunterLogo className="mt-0.5 size-6 shrink-0 text-gray-900" />
-          <div>
-            <div className="flex items-center gap-2">
-              <ExternalLink href="https://haunter.app">Haunter</ExternalLink>{" "}
-              <span className="border border-gray-200 rounded-full uppercase text-[10px] px-1.5 py-px font-semibold">
-                Private beta
-              </span>
-            </div>
-
-            <p className="mt-1 text-gray-600">
-              A simple productivity app for organizing notes, tasks, and ideas
-              in one place
-            </p>
-          </div>
-        </li>
-        <li className="flex gap-3">
-          <BeignetLogo className="mt-0.5 size-6 shrink-0" />
-          <div>
-            <div className="flex items-center gap-2">
-              <ExternalLink href="https://beignetjs.com">Beignet</ExternalLink>{" "}
-              <span className="border border-gray-200 rounded-full uppercase text-[10px] px-1.5 py-px font-semibold">
-                Alpha
-              </span>
-            </div>
-            <p className="mt-1 text-gray-600">
-              A contract-first TypeScript framework for building
-              production-ready web applications
-            </p>
-          </div>
-        </li>
-        <li className="flex gap-3">
-          <TenchiLogo className="mt-0.5 size-6 shrink-0" />
-          <div>
-            <div className="flex items-center gap-2">
-              <ExternalLink href="https://tenchi.io">Tenchi</ExternalLink>{" "}
-              <span className="border border-gray-200 rounded-full uppercase text-[10px] px-1.5 py-px font-semibold">
-                Alpha
-              </span>
-            </div>
-
-            <p className="mt-1 text-gray-600">
-              A small, contract-first Python framework
-            </p>
-          </div>
-        </li>
-      </ul>
+      <ProjectRecords />
 
       <h2 className="mt-12 text-xl font-semibold text-gray-900">Experience</h2>
 
