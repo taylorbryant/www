@@ -15,7 +15,6 @@ export default function ProjectRecords() {
   const buttons = useRef<(HTMLButtonElement | null)[]>([]);
   const touch = useRef<{ x: number; y: number } | null>(null);
   const suppressClick = useRef(false);
-  const project = projects[selected];
 
   useEffect(() => {
     const host = stage.current;
@@ -191,26 +190,35 @@ export default function ProjectRecords() {
         aria-live="polite"
         aria-atomic="true"
       >
-        <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2">
-          <div className="flex items-center gap-2">
-            <h3 className="font-semibold leading-5 text-gray-900">
-              {project.name}
-            </h3>
-            <span className="inline-flex h-5 items-center rounded-full border border-gray-200 px-1.5 text-[10px] leading-none font-semibold uppercase text-gray-800">
-              {project.status}
-            </span>
-          </div>
-          <a
-            className="text-sm font-medium text-html-blue underline-offset-4 hover:underline"
-            href={project.href}
-            aria-label={`Visit ${project.name}`}
+        {projects.map((item, index) => (
+          <div
+            key={item.id}
+            className={styles.detailsPanel}
+            data-selected={selected === index}
+            aria-hidden={selected !== index}
           >
-            Visit project <span aria-hidden="true">↗</span>
-          </a>
-        </div>
-        <p className="mt-2 max-w-[56ch] text-base/7 text-pretty text-gray-600">
-          {project.description}
-        </p>
+            <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2">
+              <div className="flex items-center gap-2">
+                <h3 className="font-semibold leading-5 text-gray-900">
+                  {item.name}
+                </h3>
+                <span className="inline-flex h-5 items-center rounded-full border border-gray-200 px-1.5 text-[10px] leading-none font-semibold uppercase text-gray-800">
+                  {item.status}
+                </span>
+              </div>
+              <a
+                className="text-sm font-medium text-html-blue underline-offset-4 hover:underline"
+                href={item.href}
+                aria-label={`Visit ${item.name}`}
+              >
+                Visit project <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <p className="mt-2 max-w-[56ch] text-base/7 text-pretty text-gray-600">
+              {item.description}
+            </p>
+          </div>
+        ))}
       </div>
       <noscript>
         <ul className="mt-4 list-disc space-y-3 pl-5">

@@ -86,7 +86,19 @@
 }
 
 .details {
+  display: grid;
   padding-top: 8px;
+}
+
+.detailsPanel {
+  /* Every entry sizes the shared row so selecting a project cannot shift it. */
+  grid-area: 1 / 1;
+  min-width: 0;
+  visibility: hidden;
+}
+
+.detailsPanel[data-selected="true"] {
+  visibility: visible;
 }
 
 @media (min-width: 768px) {
