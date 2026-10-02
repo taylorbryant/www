@@ -1,7 +1,7 @@
-import higherVisibility from "../design/experience-cassettes/highervisibility.png";
-import lnc from "../design/experience-cassettes/lnc.png";
-import noto from "../design/experience-cassettes/noto-v4.png";
-import selfEmployed from "../design/experience-cassettes/self-employed-v2.png";
+import higherVisibility from "../design/experience-cassettes/dust/highervisibility.png";
+import lnc from "../design/experience-cassettes/dust/lnc.png";
+import noto from "../design/experience-cassettes/dust/noto.png";
+import selfEmployed from "../design/experience-cassettes/dust/self-employed.png";
 
 export const experience = [
   {
