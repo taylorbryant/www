@@ -22,7 +22,7 @@
   position: absolute;
   inset: 0;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(var(--record-count), minmax(0, 1fr));
   align-items: center;
   gap: 20px;
   padding: 12px 28px 0 4px;
@@ -35,15 +35,13 @@
 .flatRecord {
   --record-angle: -3deg;
   position: relative;
+  width: min(100%, 232px);
+  justify-self: center;
   transform: rotate(var(--record-angle));
 }
 
 .flatRecord:nth-child(2) {
   --record-angle: 2deg;
-}
-
-.flatRecord:nth-child(3) {
-  --record-angle: -2deg;
 }
 
 .flatSleeve {
@@ -69,7 +67,7 @@
   position: absolute;
   inset: 16px 0 24px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(var(--record-count), minmax(0, 1fr));
   gap: 8px;
 }
 

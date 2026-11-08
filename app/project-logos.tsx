@@ -25,34 +25,30 @@ export function BeignetLogo({ className }: ProjectLogoProps) {
       aria-hidden="true"
       className={className}
       focusable="false"
-      viewBox="0 0 24 24"
+      viewBox="0 0 100 100"
     >
-      <g transform="rotate(-9 12 12)">
-        <rect fill="#4f46e5" height="18" rx="6.5" width="18" x="3" y="3" />
-        <path
-          fill="#c7d2fe"
-          d="M3 11 3 9.5 A6.5 6.5 0 0 1 9.5 3 L14.5 3 A6.5 6.5 0 0 1 21 9.5 L21 11 C18.8 12.5 17 10.4 14.9 11.5 13.1 12.5 11.5 10.4 9.5 11.3 7.7 12.2 5 12.4 3 11Z"
-        />
-      </g>
-    </svg>
-  );
-}
-
-export function TenchiLogo({ className }: ProjectLogoProps) {
-  return (
-    <svg
-      aria-hidden="true"
-      className={className}
-      focusable="false"
-      viewBox="-5 -5 74 74"
-    >
-      <rect fill="#047857" height="64" rx="18" width="64" />
-      <g fill="#ecfdf5">
-        <rect height="7" rx="2" width="48" x="8" y="12" />
-        <rect height="33" rx="2" width="7" x="17" y="19" />
-        <rect height="33" rx="2" width="7" x="40" y="19" />
-        <rect height="6" rx="2" width="38" x="13" y="28" />
-      </g>
+      <path
+        d="M28 19C40 15 55 16 68 12C81 8 87 16 89 30L94 65C97 81 87 88 74 89L32 93C17 95 10 86 8 72L5 50C3 35 12 24 28 19Z"
+        fill="#e6a34b"
+      />
+      <path
+        d="M28 19C40 15 55 16 68 12C81 8 87 16 89 30L90 36C82 44 72 40 58 44C40 49 23 59 5 46C5 33 14 24 28 19Z"
+        fill="#fff8e8"
+      />
+      <path
+        d="M28 19C40 15 55 16 68 12C81 8 87 16 89 30L94 65C97 81 87 88 74 89L32 93C17 95 10 86 8 72L5 50C3 35 12 24 28 19Z"
+        fill="none"
+        stroke="#472a22"
+        strokeWidth="4.5"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M47 74L47.5 77M72 70L72.5 73M56 77Q60 81 64 76"
+        fill="none"
+        stroke="#472a22"
+        strokeWidth="3.5"
+        strokeLinecap="round"
+      />
     </svg>
   );
 }
