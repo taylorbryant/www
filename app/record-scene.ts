@@ -8,7 +8,7 @@ export type RecordScene = {
   dispose: () => void;
 };
 
-const REST_ANGLES = [-0.055, 0.035, -0.035];
+const REST_ANGLES = [-0.055, 0.035];
 
 /** One shared, on-demand scene; the HTML buttons own all interaction. */
 export async function createRecordScene(
@@ -214,16 +214,15 @@ export async function createRecordScene(
       const active = index === selected;
       const over = index === hovered;
       const restAngle = REST_ANGLES[index] ?? 0;
-      const position =
-        ((index - selected + records.length + 1) % records.length) - 1;
+      const position = index - selected;
       const x = narrow
         ? active
           ? -0.52
           : position * 2.6 - 0.18
-        : (index - 1) * 3.15 -
+        : (index - (records.length - 1) / 2) * 3.15 -
           0.3 +
           (index > selected ? 0.2 : 0) -
-          (active && index === 2 ? 0.2 : 0);
+          (active && index === records.length - 1 ? 0.2 : 0);
       const y = narrow
         ? active
           ? 0.1
@@ -286,7 +285,9 @@ export async function createRecordScene(
     narrow =
       getComputedStyle(host).getPropertyValue("--record-layout").trim() ===
       "compact";
-    const viewWidth = narrow ? Math.max(5.5, (width / height) * 3.5) : 9.9;
+    const viewWidth = narrow
+      ? Math.max(5.5, (width / height) * 3.5)
+      : records.length * 3.15 + 0.45;
     const viewHeight = (height / width) * viewWidth;
     camera.left = -viewWidth / 2;
     camera.right = viewWidth / 2;

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { type CSSProperties, useEffect, useRef, useState } from "react";
 import styles from "./project-records.module.css";
 import { projects } from "./projects";
 import type { RecordScene } from "./record-scene";
@@ -79,7 +79,11 @@ export default function ProjectRecords() {
         <p className="text-base text-gray-500 sm:text-sm">Pick a record.</p>
       </div>
 
-      <div className={styles.collection} data-rendered={rendered}>
+      <div
+        className={styles.collection}
+        data-rendered={rendered}
+        style={{ "--record-count": projects.length } as CSSProperties}
+      >
         <div ref={stage} className={styles.stage} aria-hidden="true">
           <div className={styles.fallback}>
             {projects.map((item, index) => (
@@ -87,10 +91,7 @@ export default function ProjectRecords() {
                 key={item.id}
                 className={styles.flatRecord}
                 data-selected={selected === index}
-                data-position={
-                  ((index - selected + projects.length + 1) % projects.length) -
-                  1
-                }
+                data-position={index - selected}
               >
                 <div className={styles.flatDisc} />
                 <Image
@@ -98,7 +99,7 @@ export default function ProjectRecords() {
                   alt=""
                   width={768}
                   height={768}
-                  sizes="(max-width: 600px) 65vw, 180px"
+                  sizes="(max-width: 600px) 65vw, 232px"
                   loading="eager"
                   unoptimized
                   className={styles.flatSleeve}
@@ -119,9 +120,7 @@ export default function ProjectRecords() {
               className={styles.selector}
               aria-pressed={selected === index}
               aria-controls="project-details"
-              data-position={
-                ((index - selected + projects.length + 1) % projects.length) - 1
-              }
+              data-position={index - selected}
               onClick={() => {
                 if (suppressClick.current) {
                   suppressClick.current = false;
