@@ -5,7 +5,7 @@
 - Brand reference: the ghost mark on [Haunter's live website](https://haunter.app/),
   matching `components/ghost-logo.tsx` and `app/icon.svg` in the Haunter repository.
 - Palette: the [guides page's Dracula theme](https://www.haunter.app/guides),
-  charcoal `#282a36` and the primary lavender accent `#bd93f9` for the ghost.
+  charcoal `#282a36` and the standard off-white foreground `#f8f8f2` for the ghost.
   The paper edge retains its aged cream color.
 - Inputs: the previous Haunter sleeve (edit target), a rendering of the actual
   ghost mark (brand reference), and the updated Beignet sleeve (style reference).
@@ -18,6 +18,10 @@ Use case: precise-object-edit. Asset type: square vinyl record sleeve texture fo
 
 Use case: precise-object-edit. Image 1 is the edit target, the approved Haunter record sleeve. Change ONLY the dark printed ink background and the two circular eye cutouts to Dracula's canonical background color #282a36 (RGB 40,42,54): a distinctly cool blue-gray charcoal with a subtle purple cast. The large dark background regions must read as that exact blue-gray, clearly less neutral black and less warm brown than the source. Use the flat blue-gray background of Image 2 as the authoritative color swatch only. Preserve Image 1's existing ghost outline, size, exact eye size and placement, centered composition, ghost's cream printed ink, paper grain, scratches, scuffs, edge wear, and all other details unchanged. Keep the background's worn ink texture but shift its base hue to #282a36 without adding shadow, vignette, glow, gradients, new shapes, new distress, or text. Do not copy the ghost from Image 2 or alter the ghost in Image 1. Output the same square flat sleeve artwork, no external background.
 
-## Final ghost color adjustment prompt
+## Lavender color study prompt
 
 Use case: precise-object-edit. Image 1 is the EDIT TARGET: the approved worn Haunter record sleeve with a cream ghost on a Dracula blue-gray background. Image 2 is a COLOR REFERENCE ONLY showing Dracula lavender #bd93f9 against background #282a36. Change ONLY the cream ink INSIDE THE GHOST SILHOUETTE in Image 1 to Dracula's lavender-purple primary accent #bd93f9 (RGB 189,147,249), matching Image 2. It should read clearly as lavender-purple, not pale beige or pink, while retaining the existing fine grain and lightly worn screen-printed ink texture. Preserve Image 1's current ghost outline, proportions, size, centered position, circular eye cutouts, and scalloped base EXACTLY. Preserve the existing dark blue-gray #282a36 background and eye cutouts, all scuffs, all scratches, cream worn paper border, composition, and paper texture unchanged. No glow, shadow, gradient, vignette, new elements, lettering, typography, or other changes. Do not replace the ghost with Image 2's larger rendering; use that image only for its two flat brand colors. Output the same square sleeve.
+
+## Final standard foreground prompt
+
+Use case: precise-object-edit. Image 1 is the EDIT TARGET: the Haunter record sleeve with a lavender/purple ghost. Image 2 is the authoritative COLOR REFERENCE ONLY: Haunter's standard off-white #f8f8f2 on Dracula blue-gray #282a36. Change ONLY the lavender ink INSIDE THE GHOST in Image 1 to the standard near-white foreground #f8f8f2 (RGB 248,248,242), exactly matching the bright neutral off-white ghost in Image 2. The result must look clean nearly white, not cream, beige, tan, yellowed paper, pink or purple. Preserve the ghost's exact silhouette, size, placement, shape and circular eye cutouts from Image 1. Preserve the existing #282a36 blue-gray background, dark eye holes, cream distressed paper border, scratches and scuffs, composition and dimensions unchanged. Retain a restrained fine gray print grain within the near-white ghost, but do not tint its white ink warm or yellow as aging. This is a color-only edit; no redrawing, additions, shadows, glows, gradients, typography or layout changes. Do not adopt Image 2's larger logo scale. Output one square sleeve.
